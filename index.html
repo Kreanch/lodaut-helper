@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodaut helper: Home</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container"> 
+            <span class="logo">Lodaut helper</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="http://127.0.0.1:5500/index.html">Главная</a></li>
+                    <li><a href="#">Конструктор</a></li>
+                    <li><a href="#">Ассортимент</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li class="btn"><a href="#">Обо мне</a></li>
+                </ul>
+            </nav>
+            <h1>Закажи себе набор</h1>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Готовность в течении двух часов</h2>
+                <h1>Наборы на любой вкус и цвет.</h1>
+                <p>Есть усилители, щиты, оружия в самыми разными обвесами, бинты, шприци, витаминные спреи, зарядки для щитов, самые различные гранаты и мины.</p>
+                <button class="btn">оформить заказ</button>
+            </div>
+            <img src="/img/1625041527_5e764348294284ae7df0ebcee3a9df0c.gif" alt="">
+        </div>
+        <div class="container ds">
+            <h1>Дискорд сервер</h1>
+            <iframe class="ds_w" src="https://ptb.discord.com/widget?id=970648899733827634&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+            </iframe>
+        </div>
+        <div class="container email">
+            <h3>Новости</h3>
+            <p>Помогают быть в курсе событий</p>
+            <div class="block">
+                <div>
+                    <h4>Подписаться на обновления</h4>
+                    <p>Напишите свою электронную почту и вы будете получать уведомления если появится что-то новенькое</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Адрес электронной почты">
+                    <button onclick="checkEmail()">Продолжить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container blocks">
+            <div>
+                <span class="logo">Lodaut helper</span>
+                <p>Закажи себе набор</p>
+            </div>
+            <div>
+                <h4></h4>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div>
+                <h4></h4>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <hr>
+        <p>⟪ А мы тут не при чём, вообще не при делах, не знаем что по чём. ⟫</p>
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('Отсутствует "@"')
+            else if (!email.includes('.')) alert('Отсутствует "."')
+            else alert('Что-то пошло не так, попробуйте снова.')
+        }
+    </script>
+</body>
+
+</html>
