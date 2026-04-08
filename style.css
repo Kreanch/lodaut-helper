@@ -35,7 +35,10 @@ img {
 }
 
 header {
-    padding: 50px 0;
+    padding: 0 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: rgba(0, 0, 0, 30%);
 }
 
 header .logo, 
